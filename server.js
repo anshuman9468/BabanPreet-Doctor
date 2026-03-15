@@ -38,6 +38,18 @@ app.get('/doctor_image.png', (req, res) => {
     });
 });
 
+// Explicit route for the logo to ensure it's served correctly on Vercel
+app.get('/Final_Logo.png', (req, res) => {
+    res.setHeader('Content-Type', 'image/png');
+    res.setHeader('Cache-Control', 'public, max-age=31536000');
+    res.sendFile(path.join(__dirname, 'Final_Logo.png'), (err) => {
+        if (err) {
+            console.error('Error serving Final_Logo.png:', err);
+            res.status(404).send('Image not found');
+        }
+    });
+});
+
 const DATA_FILE = path.join(__dirname, 'appointments.json');
 const IS_VERCEL = process.env.VERCEL === '1';
 
