@@ -293,24 +293,23 @@
     <div id="app" class="h-full w-full overflow-hidden"><!-- Navigation -->
         <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
             style="background: rgba(248, 250, 251, 0.95); backdrop-filter: blur(10px);">
-            <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="max-w-6xl mx-auto px-6 py-1">
                 <div class="flex items-center justify-between"><button onclick="showSection('hero')"
                         class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-                        <div class="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center">
-                            <img src="therapy_room_logo.png" alt="The Therapy Room" class="w-full h-full object-cover">
-                        </div><span id="nav-brand" class="font-display text-xl font-semibold"
-                            style="color: var(--color-primary);">The Therapy Room</span>
+                        <div class="h-40 flex items-center justify-center">
+                            <img src="Final_Logo.png" alt="The Therapy Room" class="h-full w-auto object-contain">
+                        </div>
                     </button>
-                    <div class="hidden md:flex items-center gap-8"><button onclick="showSection('about')"
-                            class="nav-link font-medium text-sm tracking-wide hover:text-[#6B9080] transition-colors">About</button>
+                    <div class="hidden md:flex items-center gap-10"><button onclick="showSection('about')"
+                            class="nav-link font-semibold text-base tracking-wide hover:text-[#6B9080] transition-colors">About</button>
                         <button onclick="showSection('qualifications')"
-                            class="nav-link font-medium text-sm tracking-wide hover:text-[#6B9080] transition-colors">Qualifications</button>
+                            class="nav-link font-semibold text-base tracking-wide hover:text-[#6B9080] transition-colors">Qualifications</button>
                         <button onclick="showSection('experience')"
-                            class="nav-link font-medium text-sm tracking-wide hover:text-[#6B9080] transition-colors">Experience</button>
+                            class="nav-link font-semibold text-base tracking-wide hover:text-[#6B9080] transition-colors">Experience</button>
                         <button onclick="showSection('services')"
-                            class="nav-link font-medium text-sm tracking-wide hover:text-[#6B9080] transition-colors">Services</button>
+                            class="nav-link font-semibold text-base tracking-wide hover:text-[#6B9080] transition-colors">Services</button>
                         <button onclick="showSection('booking')"
-                            class="px-5 py-2.5 rounded-full text-white text-sm font-semibold gradient-accent hover:opacity-90 transition-opacity">
+                            class="px-7 py-3 rounded-full text-white text-base font-bold gradient-accent hover:opacity-90 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                             Book Session </button>
                     </div><button id="mobile-menu-btn"
                         class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
@@ -320,16 +319,16 @@
                         </svg></button>
                 </div><!-- Mobile Menu -->
                 <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
-                    <div class="flex flex-col gap-4"><button onclick="showSection('about'); toggleMobileMenu();"
-                            class="font-medium text-sm hover:text-[#6B9080] transition-colors text-left">About</button>
+                    <div class="flex flex-col gap-5"><button onclick="showSection('about'); toggleMobileMenu();"
+                            class="font-semibold text-base hover:text-[#6B9080] transition-colors text-left px-2 py-1">About</button>
                         <button onclick="showSection('qualifications'); toggleMobileMenu();"
-                            class="font-medium text-sm hover:text-[#6B9080] transition-colors text-left">Qualifications</button>
+                            class="font-semibold text-base hover:text-[#6B9080] transition-colors text-left px-2 py-1">Qualifications</button>
                         <button onclick="showSection('experience'); toggleMobileMenu();"
-                            class="font-medium text-sm hover:text-[#6B9080] transition-colors text-left">Experience</button>
+                            class="font-semibold text-base hover:text-[#6B9080] transition-colors text-left px-2 py-1">Experience</button>
                         <button onclick="showSection('services'); toggleMobileMenu();"
-                            class="font-medium text-sm hover:text-[#6B9080] transition-colors text-left">Services</button>
+                            class="font-semibold text-base hover:text-[#6B9080] transition-colors text-left px-2 py-1">Services</button>
                         <button onclick="showSection('booking'); toggleMobileMenu();"
-                            class="px-5 py-2.5 rounded-full text-white text-sm font-semibold gradient-accent text-center">
+                            class="px-5 py-3 rounded-full text-white text-base font-bold gradient-accent text-center shadow-md">
                             Book Session </button>
                     </div>
                 </div>
@@ -346,7 +345,7 @@
                         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
                             style="background: rgba(107, 144, 128, 0.1);"><span class="w-2 h-2 rounded-full"
                                 style="background: var(--color-primary);"></span> <span id="hero-brand"
-                                class="text-sm font-medium" style="color: var(--color-primary);">The Therapy Room</span>
+                                class="text-sm font-bold" style="color: var(--color-primary);">The Therapy Room</span>
                         </div>
                         <h1 id="hero-name"
                             class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
